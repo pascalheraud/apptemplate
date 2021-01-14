@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html th:replace="~{layout/layout :: layout(~{::title/text()}, ~{::script}, ~{::#mainContent}, ~{::link} )}"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>screentemplate</title>
+	<script src="/js/gen/bundles/screentemplate.js"></script>
+	<link>
+</head>
+
+<body>
+	<div id="mainContent" class="container is-hidden content" ref="mainContent">
+		<section class="section">
+			<h1 class="title">I'm the screentemplate</h1>
+			<ul v-if="beantemplates != null">
+				<li v-for="beantemplate in beantemplates">{{beantemplate.name}}</li>
+			</ul>
+		</section>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "private": true,
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vue-class-component": "",
+    "typescript": "4.1.2",
+    "bulma": "0.9.1",
+    "webpack": "",
+    "webpack-cli": "",
+    "ts-loader": "",
+    "lodash": "",
+    "@types/lodash": "",
+    "vue-loader": "",
+    "vue-template-compiler": ""
+  },
+  "scripts": {
+    "postinstall": "./src/main/bash/copymodules.sh"
+  },
+  "devDependencies": {}
+}
